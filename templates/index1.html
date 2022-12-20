@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetics Prediction</title>
+    </head>
+
+    <body style="background-color: rgba(0, 117, 123, 0.632);">
+        <h1> Diebetics Prediction </h1>
+         <!-- # GET :deploy ,POST:postman  -->
+         
+        <form method="GET" action="/predict">    
+            <label>Glucose:</label>
+            <input type = "number" name = "Glucose">
+            <!-- <input type = "text" name = "Glucose", pattern="[0-9]+"> -->
+
+            <label>BloodPressure:</label>
+            <input type = "number" name = "BloodPressure">
+            </select>  
+            <br>
+            <br>    
+            <label>SkinThickness:</label>
+            <input type = "number" name = "SkinThickness">
+            <label>Insulin:</label>
+            <input type = "number" name = "Insulin"> 
+            </select>    
+            <br>
+            <br>  
+            <label>BMI:</label>
+            <input type = "number" name = "BMI">    
+            <label>DiabetesPedigreeFunction:</label>
+            <input type = "number" name = "DiabetesPedigreeFunction">  
+            <br>
+            <br>    
+            <label>Age:</label>
+            <input type = "number" name = "Age">            
+            <br>
+            <br>
+            <input type = "submit" value="SUBMIT">    
+            <br>
+            <br>    
+            <p> diabetics : <b> {{ prediction }} </b> </p>     
+        </form>  
+    
+    </body>
+</html>
